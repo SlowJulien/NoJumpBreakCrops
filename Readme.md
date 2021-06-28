@@ -1,6 +1,6 @@
 ### NoJumpBreakCrops
 
-This is a very simple Minecraft plugin who prevent unpermitted players 
+This is a very simple Minecraft plugin which prevent unpermitted players 
 to break crops by jumping on them. This plugin **does not** have any other purpose !
 
 It should work with Bukkit, Spigot and Paper in **1.16+**.
