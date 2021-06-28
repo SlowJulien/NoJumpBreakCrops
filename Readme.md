@@ -11,6 +11,7 @@ I may or **may not** add some features.*
 
 *The code could be better organized but I think it's fine for what it does.*
 
+[Spigot Ressource Link](https://www.spigotmc.org/resources/nojumpbreakcrops.93706/)
 
 #### Commands
 
