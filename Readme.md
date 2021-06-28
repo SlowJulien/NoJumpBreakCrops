@@ -22,7 +22,11 @@ By default all op players can break crops by jumping on them.
 
 - `njbc.breakcrops` : if a player has this permission
   set to **true** he will be able to break crops by jumping on them. 
-  If this permission is explicitly defined on **false** for a player *(even Operators)*
+  If this permission is explicitly defined to **false** for a player *(even Operators)*
   he'll not be able to breakcrops by jumping on them.
   
 - `njbc.admin.njbcset` : permission to use the */njbcset* command.
+
+#### Config File
+
+Pretty simple, it only contains the boolean wich defines if the plugin is enabled.
