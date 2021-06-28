@@ -1,0 +1,12 @@
+name: NoJumpBreakCrops
+version: ${project.version}
+main: me.slowjulien.nojumpbreakcrops.NoJumpBreakCrops
+api-version: 1.16
+authors: [ SlowJulien ]
+description: Disable crop breaking if you don't have the permission.
+website: https://github.com/SlowJulien
+commands:
+  njbcset:
+    description: To enable or disable the "antijumpbreak" for the crops.
+    usage: /<command>
+    permission: njbc.admin.njbcset
