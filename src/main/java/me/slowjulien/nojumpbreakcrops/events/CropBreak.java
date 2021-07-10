@@ -19,16 +19,22 @@ public class CropBreak implements Listener {
 
     @EventHandler
     public void onBreakCrop(PlayerInteractEvent e) {
-
         // If the plugin is disabled
         if(!((boolean) plugin.getConfig().get("enabled"))) return;
 
         if(e.getAction() == Action.PHYSICAL) {
             Player p = e.getPlayer();
             try {
-                if(e.getClickedBlock().getType() == Material.FARMLAND
-                   && !p.hasPermission("njbc.breakcrops")) {
-                    e.setCancelled(true);
+                if(e.getClickedBlock().getType() == Material.FARMLAND) {
+
+                     if(!p.hasPermission("njbc.breakcrops")){
+                        e.setCancelled(true);
+                    } else if(p.isOp()) {
+                         if(((boolean) plugin.getConfig().get("affectop")) && !p.hasPermission("njbc.breakcrops")) {
+                             e.setCancelled(true);
+                         }
+                    }
+
                 }
             } catch (NullPointerException ignored) {}
         }

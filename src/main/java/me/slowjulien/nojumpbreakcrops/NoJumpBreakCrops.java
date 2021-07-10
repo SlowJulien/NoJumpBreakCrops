@@ -1,6 +1,6 @@
 package me.slowjulien.nojumpbreakcrops;
 
-import me.slowjulien.nojumpbreakcrops.commands.EnableDisable;
+import me.slowjulien.nojumpbreakcrops.commands.ConfigCmd;
 import me.slowjulien.nojumpbreakcrops.events.CropBreak;
 import me.slowjulien.nojumpbreakcrops.utils.Logger;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -31,11 +31,13 @@ public final class NoJumpBreakCrops extends JavaPlugin {
 
 
     private void loadCommands() {
-        this.getCommand("njbcset").setExecutor(new EnableDisable(this));
+        this.getCommand("njbc").setExecutor(new ConfigCmd(this));
     }
 
     private void configFileGeneration() {
         config.addDefault("enabled", true);
+        // If set to true operators without the permission njbc.breakcrops can't break
+        config.addDefault("affectop", false);
         config.options().copyDefaults(true);
         saveConfig();
     }
