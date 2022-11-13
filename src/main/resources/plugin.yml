@@ -1,0 +1,16 @@
+name: NoJumpBreakCrops
+version: 1.1.0
+main: me.slowjulien.nojumpbreakcrops.NoJumpBreakCrops
+api-version: 1.16
+authors: [ SlowJulien ]
+description: Disable crop breaking if you don't have the permission.
+website: https://github.com/SlowJulien
+commands:
+  njbc:
+    description: To config the NJBC plugin.
+    usage:  /njbc, /njbc <enabled | disabled>, /njbc affectop <true | false>
+    permission: njbc.admin
+permissions:
+  njbc.breakcrops:
+    description: Allow to break crops and bypass NJBC plugin
+    default: false
