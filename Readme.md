@@ -3,6 +3,7 @@
 This is a very simple Minecraft plugin which prevent unauthorized players
 to break crops by jumping on them. This plugin **does not** have any other purpose !
 
+Tested with Paper 1.16, 1.17, 1.18 and 1.19.
 It should work with Bukkit, Spigot and Paper in **1.16+**.
 
 *I made this plugin for a private server and I decided to share
@@ -35,9 +36,9 @@ You can go further by using the permissions mentioned below.
 By default, all op players can break crops by jumping on them.
 
 - `njbc.breakcrops` : if a player has this permission
-  set to **true** he will be able to break crops by jumping on them.
+  set to **true** they will be able to break crops by jumping on them.
   If this permission is explicitly set to **false** for a player *(even Operators)*
-  he'll not be able to break crops by jumping on them. False by default for everyone
+  ll not be able to break crops by jumping on them. False by default for everyone
   but operators bypass it if *affectop* is set to false.
 
 - `njbc.admin` : permission to use the */njbc* command. False by default
