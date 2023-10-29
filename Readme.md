@@ -48,3 +48,6 @@ By default, all op players can break crops by jumping on them.
 
 - `affectop` (boolean) : true if operators are affected by the plugin.
 - `enabled` (boolean) : true if the plugin is enabled.
+
+#### Licence
+**[GNU GENERAL PUBLIC LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html)**
