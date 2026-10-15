@@ -37,7 +37,7 @@ public final class NoJumpBreakCrops extends JavaPlugin {
     private void configFileGeneration() {
         config.addDefault("enabled", true);
         // If set to true operators without the permission njbc.breakcrops can't break
-        config.addDefault("affectop", false);
+        config.addDefault("affectop", true);
         config.options().copyDefaults(true);
         saveConfig();
     }
